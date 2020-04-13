@@ -1,0 +1,87 @@
+/* pages/My/integral.wxss */
+.integral-container{
+  display: flex;
+  z-index: 0;
+  flex-direction: column;
+  background: #f0f4f7;
+  height: 100%;
+}
+.integral-container .integral{
+  position: relative;
+  margin-bottom: 23rpx;
+  z-index: 0;
+  display: flex;
+  height: 145rpx;
+  width: 750rpx;
+  align-items: center;
+  justify-content: center;
+}
+.integral-container .integral>.img{
+  z-index: -1;
+  position: absolute;
+  height: 145rpx;
+  width: 750rpx;
+}
+.integral-container .integral .text{
+  display: flex;
+  height: 60rpx;
+  align-items: center;
+}
+.integral-container .integral .text text:nth-child(1){
+  font-weight:bold;
+  color:rgba(255,255,255,1);
+}
+.integral-container .integral .text text:nth-child(2){
+  margin-left: 10rpx; 
+  font-size:60rpx;
+  color:rgba(255,255,255,1);
+}
+.integral-container .li{
+  display: flex;
+  height: 168rpx;
+  background: #fff;
+}
+.integral-container .li .commodity{
+  margin-top: 40rpx;
+  display: flex;
+}
+.integral-container .li .commodity>.img{
+  margin-left: 32rpx;
+  width: 88rpx;
+  height: 88rpx;
+}
+.integral-container .li .commodity .text{
+  margin-left: 30rpx;
+  width: 598rpx;
+  display: flex;
+  justify-content: space-between;
+  
+  border-bottom: 1rpx solid #e1e5e7;
+}
+.integral-container .li .commodity .text>text{
+  margin-right: 36rpx;
+  font-weight:bold;
+  color:rgba(26,167,23,1);
+}
+.integral-container .consumption .commodity .text>text{
+  color: #FF0066;
+}
+.integral-container .li .commodity .text .Name-Date{
+  margin-top: 10rpx;
+  display: flex;
+  flex-direction: column;
+}
+.integral-container .li .commodity .text .Name-Date .Name{
+  font-weight:bold;
+  display: flex;
+}
+.integral-container .li .commodity .text .Name-Date>text{
+  margin-top: 10rpx;
+  color: #b9b7b8; 
+}
+.integral-container .li .commodity .text .Name-Date .Name text:nth-child(1){
+  color:#03AB00;
+}
+.integral-container .consumption .commodity .text .Name-Date .Name text:nth-child(1){
+  color: #FF0066;
+}

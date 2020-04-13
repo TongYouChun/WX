@@ -1,0 +1,98 @@
+<!--pages/HomePage/HomePage.wxml-->
+<view class='HomePage-container'>
+  <view class='HomePage-top'>
+    <view class='location'>
+      <image class='location-image' src='/resources/dizhi.png'></image>
+      <text>{{province}}</text>
+    </view>
+    <view class='search'>
+      <view class='form'>
+        <input class='input-text' placeholder='输入配送站 关键字检索'/>
+        <image class='button' src='/resources/search.png'></image>
+      </view>
+    </view>
+  </view>
+  <view class='HomePage-bottom'>
+    <view class='bottom-menu'>
+        <view class='li {{springWater}}' bindtap='Li' data-gid='1'><text>农夫山泉</text></view>
+        <view class='li {{YiBao}}' bindtap='Li' data-gid='2'><text>怡宝</text></view>
+        <view class='li {{IceSpring}}' bindtap='Li' data-gid='3'><text>恒大冰泉</text></view>
+        <view class='li {{Wahaha}}' bindtap='Li' data-gid='4'><text>娃哈哈</text></view>
+        <view class='li {{Nestle}}' bindtap='Li' data-gid='5'><text>雀巢</text></view>
+        <view class='li {{Centenary}}' bindtap='Li' data-gid='6'><text>百岁山</text></view>
+        <view class='li {{Watsons}}' bindtap='Li' data-gid='7'><text>屈臣氏</text></view>
+        <view class='li {{Bit}}' bindtap='Li' data-gid='8'><text>倍特</text></view>
+        <view class='li {{ShuiYiFang}}' bindtap='Li' data-gid='9'><text>水易方</text></view>
+    </view>
+    <view class='bottom-content'>
+      <view class='content-option'>
+        <view class='option-yizho'>
+          <view class='week {{service}}' bindtap='ThisWeek'data-gid='1'>本周服务</view>
+          <view class='week {{SalesVolume}}' bindtap='ThisWeek' data-gid='2'>本周销量</view>
+        </view>
+        <view class='option-Varieties' bindtap='Varieties'>
+          <text class='{{text}}'>品种</text>
+          <image src='{{img}}'></image>
+        </view>
+      </view>
+      <view class='content-water' wx:if="{{txt}}">
+        <view class='chart1'>
+          <image class='chart' src='/resources/water-1.png'></image>
+          <text>19L</text>
+        </view>
+        <view class='chart1'>
+          <image class='chart' src='/resources/water-2.png'></image>
+          <text>5L</text>
+        </view>
+        <view class='chart1'>
+          <image class='chart' src='/resources/water-3.png'></image>
+          <text>600ML</text>
+        </view>
+        <view class='chart1'>
+          <image class='chart' src='/resources/water-1.png'></image>
+          <text>19L</text>
+        </view>
+        <view class='chart1'>
+          <image class='chart' src='/resources/water-2.png'></image>
+          <text>5L</text>
+        </view>
+        <view class='chart1'>
+          <image class='chart' src='/resources/water-3.png'></image>
+          <text>600ML</text>
+        </view>
+      </view>
+      <view class='content-chart'>
+        <swiper indicator-dots="{{true}}"
+          autoplay="{{true}}" interval="{{2000}}" duration="{{500}}" indicator-color="rgba(255, 255, 255, .8)" indicator-active-color="#1889E5" circular="{{true}}" >
+          <block wx:for="{{background}}" wx:key='{{index}}'>
+            <swiper-item>
+              <image src='{{item}}' class='slide-image' width="30" height="15"/>
+            </swiper-item>
+          </block>
+        </swiper>
+      </view>
+      <view class='content-product' bindtap='details'>
+         <view class='product'>
+          <image class='chart' src='/resources/MerchantMap.png'></image>
+          <view class='product-information'>
+            <text class='Text'>韩寒王府水站</text>
+            <text class='text'>朝阳区东坝乡华翰福源D区421楼底商012</text>
+            <view class='information-score'>
+              <view class="score">
+                <image class='img' src='/resources/FiveStars.png'></image>
+                <image class='img' src='/resources/FiveStars.png'></image>
+                <image class='img' src='/resources/FiveStars.png'></image>
+                <image class='img' src='/resources/FiveStars.png'></image>
+                <image class='img' src='/resources/FiveStars(1).png'></image>
+              </view>
+              <view class='position'>
+                <image class='imge' src='/resources/status.png'></image>
+                <text>2.06KM</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

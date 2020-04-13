@@ -1,0 +1,20 @@
+<!--pages/Order/Success.wxml-->
+<view class='Success-container'>
+  <view class='Success-top'>
+    <image class='img' src='/resources/Success.png'></image>
+    <view class='transaction'>
+      <image class='img' src='/resources/Correct.png'></image>
+      <text>交易成功</text>
+    </view>
+    <text class='font-28'>本次交易获得 10 个平台积分</text>
+    <view class='homepage font-28'>
+      <text bindtap='homePage'bindtap='homePage'>返回首页</text>
+      <text bindtap='Praise' bindtap='Praise'>立即评价</text>
+    </view>
+  </view>
+  <view class='Success-bottom'>
+    <image class='img' src='/resources/payment.png'></image>
+    <text class='font-36'>生活饮用水 上叮当送水</text>
+    <text class='font-24'>幸福生活 便利你我它</text>
+  </view>
+</view>

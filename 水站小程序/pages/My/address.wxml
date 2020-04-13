@@ -1,0 +1,68 @@
+<!--pages/My/address.wxml-->
+<view class='address-container' wx:if='{{address}}'>
+  <view class='address'>
+    <view class='User-information'>
+      <view class='User font-30'>
+        <text>{{xinxi.Consignee}}</text>
+        <text>{{xinxi.contact}}</text>
+      </view>
+      <text class='font-28'>{{xinxi.section[0]}}{{xinxi.section[1]}}{{xinxi.section[2]}},{{xinxi.detailed}}</text>
+    </view>
+    <text class='font-30' bindtap='edit'>编辑</text>
+  </view>
+  <view class='add'>
+    <view class='WeChat'>
+      <image class='img' src='/resources/WeChat.png'></image>
+      <text class='font-32' bindtap='WeChat'>微信添加地址</text>
+    </view>
+    <text class='font-32' bindtap='Manual'>手动添加地址</text>
+  </view>
+</view>
+<form  bindsubmit='formSubmit' bindreset='formReset' wx:if='{{AddTo}}'>
+  <view class='Add-To-container'>
+    <view class='Add-To font-30'>
+      <view class='Consignee li'><text>收货人</text><input name="Consignee" class='input' placeholder='姓名'></input></view>
+      <view class='contact li'><text>联系方式</text><input class='input' maxlength="11" name="contact" type='number' placeholder='手机号码'></input></view>
+      <view class='region li'>
+        <text>所在地区</text>
+        <view class="section input">
+          <picker name="section"  mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+            <view class='color-b' wx:if="{{xiaoshi}}">请选择</view>
+            <view class="picker">
+            {{region[0]}}{{region[1]}}{{region[2]}}
+            </view>
+          </picker>
+        </view>
+        <image src='/resources/RightArrow.png'/>
+      </view>
+      <view class='detailed li'><text>详细地区</text><input name="detailed" class='input' placeholder='详细地址填写楼栋楼层或房间号信息 '></input></view>
+    </view>
+    <button form-type='submit' bindtap='AddTo'>确定</button>
+  </view>
+</form>
+
+<form bindsubmit='formSubmit' bindreset='formReset' wx:if='{{Edit}}'>
+  <view class='Add-To-container Edit'>
+    <view class='Add-To font-30'>
+      <view class='Consignee li'><text>收货人</text><input  class='input' name="Consignee" placeholder='姓名'></input></view>
+      <view class='contact li'><text>联系方式</text><input  maxlength="11" class='input' name="contact" type='number' placeholder='手机号码'></input></view>
+      <view class='region li'>
+        <text>所在地区</text>
+        <view class="section input">
+          <picker name="section" mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+            <view class='color-b' wx:if="{{xiaoshi}}">请选择</view>
+            <view class="picker">
+            {{region[0]}}{{region[1]}}{{region[2]}}
+            </view>
+          </picker>
+        </view>
+        <image src='/resources/RightArrow.png'/>
+      </view>
+      <view class='detailed li'><text>详细地区</text><input name="detailed" class='input' placeholder='详细地址填写楼栋楼层或房间号信息 '></input></view>
+    </view>
+    <button form-type='submit' bindtap='modify'>确定</button>
+    <button class='text' bindtap='delete'>删除地址</button>
+  </view>
+</form>
+
+

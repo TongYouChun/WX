@@ -1,0 +1,123 @@
+/* pages/My/History.wxss */
+.History{
+  display: flex;
+  flex-direction: column;
+  background: #F0F4F7;
+  height: 100%;
+  align-items: center;
+}
+.History .SignFor{
+  margin-top: 21rpx;
+  width: 710rpx;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.History .SignFor .head{
+  margin: 25rpx 33rpx 12rpx 25rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.History .SignFor .head text:nth-child(1){
+  font-weight:bold;
+  color:rgba(1,1,1,1);
+}
+.History .SignFor .head text:nth-child(2){
+  font-weight:300;
+  color:rgba(153,153,153,1);
+}
+.History .SignFor .chart{
+  margin-left: 30rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+.History .SignFor .chart .product{
+  margin: 13rpx 0 17rpx 0;
+  margin-right: 34rpx;
+  position: relative;
+  width: 136rpx;
+  height: 136rpx;
+}
+.History .SignFor .chart .product .img{
+  width: 136rpx;
+  height: 136rpx;
+  border-radius: 10rpx;
+}
+.History .SignFor .chart .product text{
+  position: absolute;
+  padding: 6rpx 10rpx;
+  background: #666666;
+  right: 0;
+  bottom: 0;
+  color: #fff;
+}
+.History .SignFor .chart .information{
+  display: flex;
+  flex-direction: column;
+  margin-top: 15rpx;
+}
+.History .SignFor .chart .information text:nth-child(1){
+  font-weight:bold;
+  color:rgba(0,0,0,1);
+}
+.History .SignFor .chart .information text:nth-child(2){
+  margin-top: 25rpx;
+  font-weight:300;
+  color:rgba(136,136,136,1);
+}
+
+.History .SignFor .Price{
+  display: flex;
+  margin: 0 22rpx;
+  margin-top: 10rpx;
+  padding-bottom: 20rpx;
+  padding-left: 306rpx;
+  border-bottom: 1rpx solid #DDDDDD;
+  height: 36rpx;
+  align-items: center;
+}
+.History .SignFor .Price text:nth-child(1) ,.History .SignFor .Price text:nth-child(2){
+  margin-right: 27rpx; 
+  font-weight:300;
+  color:rgba(153,153,153,1);
+}
+.History .SignFor .Price text:nth-child(3){
+  margin-left: 6rpx;
+  font-weight:normal;
+  color:rgba(10,10,10,1);
+}
+.History .SignFor .evaluate{
+  margin: 0 22rpx;
+  height: 90rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.History .SignFor .evaluate>text{
+  font-weight:300;
+  color:rgba(136,136,136,1);
+}
+.History .SignFor .evaluate .text{
+  display: flex;
+}
+.History .SignFor .evaluate .text text{
+  width: 150rpx;
+  height: 56rpx;
+  border-radius: 8rpx;
+  font-weight:500;
+  line-height:56rpx;
+  text-align: center;
+  border: 2rpx solid #FF0066;
+}
+.SignFor .evaluate .text text:nth-child(1){
+   color:rgba(255,0,102,1);
+}
+.History .SignFor .evaluate .text text:nth-child(2){
+  background: #FF0066;
+  color: #fff;
+  margin-left: 14rpx;
+}
+.History .SignFor .evaluate .text .Evaluate{
+  border: 2rpx solid #DDDDDD;
+  color:rgba(36,36,36,1);
+}

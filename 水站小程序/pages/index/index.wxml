@@ -1,0 +1,20 @@
+<!--index.wxml-->
+<view class='index-dox'>
+<image class='dox-image' src='/resources/cover.png'></image>
+  <view class='index-container'>
+    <view class='index-top'>
+    </view>
+    <view class='index-bottom'>
+      <image class='bottom-image' src='/resources/Star.png'></image>
+      <view class='index-title'>
+        <image src='/resources/user.png'></image>
+      </view>
+      <view class='index-text'>
+        <text>感谢您使用叮当送水联盟平台:</text>
+        <text>本平台旨在为用户打造一款好用的，健康安全的饮用水配送平台。解决市民用户饮水需求。</text>
+        <text> 本平台对入住商家，逐一做入驻审核，并提供公正的评价服务，监督每一次的服务质量，奖励服务优质的商家，处罚或除名服务低劣的商家。</text>
+      </view>
+      <view class='index-button' bindtap='HomePage'>前往订水</view>
+    </view>
+  </view>
+</view>

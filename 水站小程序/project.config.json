@@ -1,0 +1,155 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": true,
+		"es6": true,
+		"enhance": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"nodeModules": true,
+		"autoAudits": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.9.3",
+	"appid": "wxbab67a3ac0fb4a8e",
+	"projectname": "%E6%B0%B4",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 13,
+			"list": [
+				{
+					"id": -1,
+					"name": "26",
+					"pathName": "pages/HomePage/HomePage",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "7",
+					"pathName": "pages/Order/Praise",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "1",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "1",
+					"pathName": "pages/details/details",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "1",
+					"pathName": "pages/My/My",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "3",
+					"pathName": "pages/HomePage/HomePage",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "5",
+					"pathName": "pages/HomePage/HomePage",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "6",
+					"pathName": "pages/details/details",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "111",
+					"pathName": "pages/HomePage/HomePage",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "112",
+					"pathName": "pages/My/Collection",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "112",
+					"pathName": "pages/My/address",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "2",
+					"pathName": "pages/details/details",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "6",
+					"pathName": "pages/My/address",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "4",
+					"pathName": "pages/Order/Order",
+					"scene": null
+				}
+			]
+		}
+	}
+}

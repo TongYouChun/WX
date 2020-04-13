@@ -1,0 +1,232 @@
+/* pages/My/RedEnvelopes.wxss */
+.RedEnvelopes-container{
+  display: flex;
+  z-index: 0;
+  flex-direction: column;
+  background: #f0f4f7;
+  height: 100%;
+  align-items: center;
+}
+.RedEnvelopes-container .RedEnvelopes{
+  position: relative;
+  margin-bottom: 18rpx;
+  z-index: 0;
+  display: flex;
+  height: 145rpx;
+  width: 750rpx;
+  align-items: center;
+  justify-content: center;
+}
+.RedEnvelopes-container .RedEnvelopes>.img{
+  z-index: -1;
+  position: absolute;
+  height: 145rpx;
+  width: 750rpx;
+}
+.RedEnvelopes-container .RedEnvelopes .text{
+  display: flex;
+  height: 60rpx;
+  align-items: center;
+}
+.RedEnvelopes-container .RedEnvelopes .text text:nth-child(1){
+  font-weight:bold;
+  color:rgba(255,255,255,1);
+}
+.RedEnvelopes-container .RedEnvelopes .text text:nth-child(2){
+  margin-left: 20rpx; 
+  font-size:60rpx;
+  color:rgba(255,255,255,1);
+}
+.RedEnvelopes-container .Prize{
+  display: flex;
+  width: 696rpx;
+  height: 104rpx;
+  background: #fff;
+  justify-content: space-between;
+  align-items: center;
+}
+.RedEnvelopes-container .Prize .text-left{
+  margin-left: 22rpx;
+  display: flex;
+  height: 35rpx;
+  align-items: center;
+}
+.RedEnvelopes-container .Prize .text-left>.img{
+  width: 35rpx;
+  height: 35rpx;
+}
+.RedEnvelopes-container .Prize .text-left text{
+  margin-left: 12rpx;
+  color: #2e302f;
+}
+.RedEnvelopes-container .Prize .text{
+  margin-right: 18rpx;
+  display: flex;
+  height: 22rpx;
+  align-items: center;
+}
+.RedEnvelopes-container .Prize .text text{
+  color: #9ea09f;
+}
+.RedEnvelopes-container .Prize .text>.img{
+  margin-left: 5rpx;
+  width: 10rpx;
+  height: 16rpx;
+}
+.RedEnvelopes-container .shop{
+  position: relative;
+  z-index: 0;
+  width: 710rpx;
+  height: 166rpx;
+  background: #fff;
+  margin-top: 16rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.RedEnvelopes-container .shop>.img{
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  width:52rpx;
+  height: 50rpx;
+}
+.RedEnvelopes-container .shop .text-left ,.RedEnvelopes-container .shop .text-in ,.RedEnvelopes-container .shop .text-right {
+  display: flex;
+  flex-direction: column;
+}
+.RedEnvelopes-container .shop .text-left .text{
+  margin-left: 70rpx;
+  display: flex;
+}
+.RedEnvelopes-container .shop .text-left .text text:nth-child(1){
+  font-size:24rpx;
+  font-weight:600;
+  color: #e90828;
+}
+.RedEnvelopes-container .shop .text-left .text text:nth-child(2){
+  font-size:40rpx;
+  font-weight:600;
+  color: #e90828;
+}
+.RedEnvelopes-container .shop .text-left>text{
+  margin-left: 48rpx;
+  font-size:20rpx;
+  font-weight:300;
+  color: #858585;
+}
+.RedEnvelopes-container .shop .text-in>text{
+  font-weight:400;
+  color:rgba(0,0,0,1);
+}
+.RedEnvelopes-container .shop .text-in .text{
+  margin-top: 14rpx;
+  display: flex;
+  flex-direction: column;
+  font-size:22rpx;
+  font-weight:300;
+  color: #8f8f8d;
+}
+.RedEnvelopes-container .shop .text-right{
+  margin-right: 28rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.RedEnvelopes-container .shop .text-right text:nth-child(1){
+  margin-bottom: 12rpx;
+  color: #ff4150;
+}
+.RedEnvelopes-container .shop .text-right text:nth-child(2){
+  width: 122rpx;
+  height: 54rpx;
+  background: #fc464d;
+  border-radius: 26rpx;
+  text-align: center;
+  line-height:54rpx;
+  color:#fff;
+}
+
+.RedEnvelopes-container .Member{
+  width: 710rpx;
+  height: 162rpx;
+  background: #fff5c4;
+  margin-top: 16rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.RedEnvelopes-container .Member .text-left{
+  display: flex;
+  flex-direction: column;
+}
+.RedEnvelopes-container .Member .text-left .text{
+  margin-left: 70rpx;
+  display: flex;
+  align-content: center;
+}
+.RedEnvelopes-container .Member .text-left .text text:nth-child(1){
+  font-size:24rpx;
+  font-weight:600;
+  color: #625425;
+}
+.RedEnvelopes-container .Member .text-left .text text:nth-child(2){
+  font-size:40rpx;
+  font-weight:600;
+  color: #625425;
+}
+.RedEnvelopes-container .Member .text-left>text{
+  margin-left: 48rpx;
+  font-size:20rpx;
+  color: #625425;
+}
+.RedEnvelopes-container .Member .text-in{
+  display: flex;
+  flex-direction: column;
+}
+.RedEnvelopes-container .Member .text-in>text:nth-child(1){
+  font-weight:600;
+  color: #625425;
+
+}
+.RedEnvelopes-container .Member .text-in>text:nth-child(2){
+  margin-top: 14rpx;
+  font-size:22rpx;
+}
+.RedEnvelopes-container .Member .text-right{
+  margin-right: 28rpx;
+  width: 122rpx;
+  height: 54rpx;
+  background: #645325;
+  border-radius: 26rpx;
+  text-align: center;
+  line-height:54rpx;
+  color:#e9d484;
+}
+.RedEnvelopes-container .More{
+  margin-top: 48rpx;
+  width: 750rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.RedEnvelopes-container .More>text{
+  color: #9c9a9b;
+}
+.RedEnvelopes-container .More .text{
+  margin-top: 80rpx;
+  display: flex;
+  height: 22rpx;
+  align-items: center;
+}
+.RedEnvelopes-container .More .text text:nth-child(1){
+  padding-right: 10rpx;
+  border-right: 1rpx solid #9f9d9e;
+  color: #9f9d9e;
+}
+.RedEnvelopes-container .More .text text:nth-child(2){
+  margin-left: 10rpx;
+  color: #9f9d9e;
+}

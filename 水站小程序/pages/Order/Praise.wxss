@@ -1,0 +1,135 @@
+/* pages/Order/Praise.wxss */
+.Praise-container{
+  border-top: 1rpx solid #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  background: #F0F4F7;
+  height: 100%;
+}
+.Praise-container .describe{
+  display: flex;
+  height: 118rpx;
+  background: #fff;
+  border-bottom: 1rpx solid #f0f0f0;
+  align-items: center;
+}
+.Praise-container .describe>.img{
+  margin-left: 22rpx;
+  width: 72rpx;
+  height: 72rpx;
+}
+.Praise-container .describe>text:nth-child(2){
+  margin: 0 12rpx 0 10rpx;
+
+}
+.Praise-container .describe>text:nth-child(4){
+  margin-left: 12rpx;
+  color: #a1a1a1;
+}
+.Praise-container .describe .Stars>.img{
+  margin: 0 15rpx;
+  width: 38rpx;
+  height: 38rpx;
+}
+.Praise-container .evaluate{
+  padding: 0 24rpx;
+  height: 400rpx;
+  border-bottom: 1rpx solid #F0F4F7;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.Praise-container .evaluate .input{
+  height: 206rpx;
+}
+.Praise-container .evaluate .input textarea{
+  width: 680rpx;
+  height: 206rpx;
+}
+.Praise-container .evaluate .container{
+  display: flex;
+}
+.Praise-container .evaluate .container .li{
+  display: flex;
+  flex-direction: column;
+  width: 164rpx;
+  height: 154rpx;
+  align-items: center;
+  justify-content: center;
+  border: 1rpx dashed #e4e4e4;
+
+}
+.Praise-container .evaluate .container .li:nth-child(2){
+  margin-left: 20rpx;
+}
+.Praise-container .evaluate .container .li>.img{
+  width: 60rpx;
+  height: 40rpx;
+}
+.Praise-container .evaluate .container .li>text{
+  margin-top: 32rpx;
+  color: #c0c0c0;
+}
+
+.Praise-container .DormantName{
+  display: flex;
+  background: #fff;
+  height: 96rpx;
+  align-items: center;
+  justify-content: space-between;
+}
+.Praise-container .DormantName .Name{
+  margin-left: 38rpx;
+  display: flex;
+  height: 40rpx;
+  align-items: center;
+}
+.Praise-container .DormantName .Name .img{
+  width: 40rpx;
+  height: 30rpx;
+  border-radius: 50%;
+}
+.Praise-container .DormantName .Name>text{
+  margin-left: 20rpx;
+}
+.Praise-container .DormantName>text{
+  margin-right: 22rpx;
+  color: #afadae;
+}
+.Praise-container .shop{
+  margin-top: 20rpx;
+  padding-bottom: 30rpx;
+  display: flex;
+  height: 140rpx;
+  background: #fff;
+  align-items: center;
+}
+.Praise-container .shop>.imgs{
+  margin-left: 22rpx;
+  width: 56rpx;
+  height: 56rpx;
+}
+.Praise-container .shop>text{
+  margin: 0 12rpx 0 14rpx;
+  font-weight:400;
+  color:rgba(51,51,51,1);
+}
+.Praise-container .shop>.img{
+  margin: 0 15rpx;
+  width: 38rpx;
+  height: 38rpx;
+}
+.Praise-container .Release{
+  margin-top: 42rpx;
+  margin-left: 45rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 88rpx;
+  width: 660rpx;
+  border-radius: 20rpx;
+  background: #FF0066;
+  font-weight:300;
+  color:rgba(255,255,255,1);
+
+}

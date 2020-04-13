@@ -1,0 +1,24 @@
+<!--pages/My/Collection.wxml-->
+<view class='Collection-container' >
+  <view class='Collection' wx:if="{{quxiao}}">
+    <image class='commodity' src='/resources/MerchantMap.png' bindtouchmove='GuanZhu1'></image>
+    <view class='information' bindtouchmove='GuanZhu'>
+      <text class='font-30'>恒大花园社区水站</text>
+      <text class='font-24'>朝阳区东坝乡华翰福源D区421楼底商012</text>
+      <view class='evaluate-Location'>
+        <view class='evaluate'>
+        <image class='img' src='/resources/FiveStars.png'></image>
+        <image class='img' src='/resources/FiveStars.png'></image>
+        <image class='img' src='/resources/FiveStars.png'></image>
+        <image class='img' src='/resources/FiveStars.png'></image>
+        <image class='img' src='/resources/FiveStars(1).png'></image>
+      </view>
+      <view class='Location'>
+        <image class='imgs' src='/resources/status.png'></image>
+          <text class='font-24'>2.06KM</text>
+        </view>
+      </view>
+    </view>
+    <text wx:if='{{guanzhu}}' bindtap='QuXiao'>取消关注</text>
+  </view>
+</view>

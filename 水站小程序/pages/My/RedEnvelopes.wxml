@@ -1,0 +1,112 @@
+<!--pages/My/RedEnvelopes.wxml-->
+<view class='RedEnvelopes-container'>
+  <view class='RedEnvelopes'>
+    <image class='img' src='/resources/Red-Envelopes.png'></image>
+    <view class='text'>
+      <text class='font-24'>店铺红包</text>
+      <text>3</text>
+    </view>
+  </view>
+  <view class='Prize'>
+    <view class='text-left'>
+      <image class='img' src='/resources/gift.png'></image>
+      <text class='font-30rpx'>推荐有奖</text>
+    </view>
+    <view class='text'>
+      <text class='font-22'>15元现金拿不停</text>
+      <image class='img' src='/resources/you.png'></image>
+    </view>
+  </view>
+  <view class='shop'>
+    <image class='img' src='/resources/new.png'></image>
+    <view class='text-left'>
+      <view class='text'>
+        <text>￥</text>
+        <text>5</text>
+      </view>
+      <text>满6元可以用</text>
+    </view>
+    <view class='text-in'>
+      <text class='font-30'>店铺名称专享</text>
+      <view class='text'>
+        <text>限2019-07-08当天使用</text>
+        <text>限收手机号156 789 7677</text>
+      </view>
+    </view>
+    <view class='text-right'>
+      <text class='font-22'>限今日</text>
+      <text class='font-26'>去使用</text>
+    </view>
+  </view>
+  <view class='Member'>
+    <view class='text-left'>
+      <view class='text'>
+        <text>￥</text>
+        <text>5</text>
+      </view>
+      <text>满任意金额可以用</text>
+    </view>
+    <view class='text-in'>
+      <text class='font-30'>超级会员</text>
+      <text>2019-03-23到期</text>
+    </view>
+    <view class='text-right'>
+      <text class='font-26'>使用</text>
+    </view>
+  </view>
+   <view class='Member'>
+    <view class='text-left'>
+      <view class='text'>
+        <text>￥</text>
+        <text>5</text>
+      </view>
+      <text>满任意金额可以用</text>
+    </view>
+    <view class='text-in'>
+      <text class='font-30'>超级会员</text>
+      <text>2019-03-23到期</text>
+    </view>
+    <view class='text-right'>
+      <text class='font-26'>使用</text>
+    </view>
+  </view>
+   <view class='Member'>
+    <view class='text-left'>
+      <view class='text'>
+        <text>￥</text>
+        <text>5</text>
+      </view>
+      <text>满任意金额可以用</text>
+    </view>
+    <view class='text-in'>
+      <text class='font-30'>超级会员</text>
+      <text>2019-03-23到期</text>
+    </view>
+    <view class='text-right'>
+      <text class='font-26'>使用</text>
+    </view>
+  </view>
+   <view class='Member'>
+    <view class='text-left'>
+      <view class='text'>
+        <text>￥</text>
+        <text>5</text>
+      </view>
+      <text>满任意金额可以用</text>
+    </view>
+    <view class='text-in'>
+      <text class='font-30'>超级会员</text>
+      <text>2019-03-23到期</text>
+    </view>
+    <view class='text-right'>
+      <text class='font-26'>使用</text>
+    </view>
+  </view>
+  <view class='More'>
+    <text class='font-28'>没有更多了~</text>
+    <view class='text font-22'>
+      <text>查看历史红包</text>
+      <text>红包说明</text>
+    </view>
+  </view>
+</view>

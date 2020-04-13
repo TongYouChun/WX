@@ -1,0 +1,40 @@
+<!--pages/My/integral.wxml-->
+<view class='integral-container'>
+  <view class='integral'>
+    <image class='img' src='/resources/integral.png'></image>
+    <view class='text'>
+      <text class='font-24'>当前积分当前积分</text>
+      <text>18</text>
+    </view>
+  </view>
+  <view class='li purchase'>
+    <view class='commodity'>
+      <image class='img' src='/resources/currency.png'></image>
+      <view class='text'>
+        <view class='Name-Date'>
+            <view class='Name font-30'>
+              <text>购买商品</text>
+              <text>-浩泽括水站</text>
+            </view>
+          <text class='font-26'>7月21日 17:54</text>
+        </view>
+        <text class='font-36'>+20</text>
+      </view>
+    </view>
+  </view>
+  <view class='li consumption'>
+     <view class='commodity'>
+      <image class='img' src='/resources/currency.png'></image>
+      <view class='text'>
+        <view class='Name-Date'>
+            <view class='Name font-30'>
+              <text>支付消费</text>
+              <text>-浩泽括水站</text>
+            </view>
+          <text class='font-26'>7月21日 17:54</text>
+        </view>
+        <text class='font-36'>-2</text>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,72 @@
+/* pages/My/Collection.wxss */
+.Collection-container{
+  display: flex;
+  flex: content;
+  width: 750rpx;
+  height: 100%;
+  background: #f0f4f7;
+}
+.Collection-container .Collection{
+  margin-top: 20rpx; 
+  display: flex;
+  width: 750rpx;
+  height: 220rpx;
+  background: #fff;
+}
+.Collection-container .Collection .commodity{
+  margin: 29rpx 0 0 17rpx;
+  height: 160rpx;
+  width:160rpx;
+}
+.Collection-container .Collection .information{
+  flex: 1;
+  margin: 36rpx 0 0 25rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 30rpx;
+  
+}
+.Collection-container .Collection .information>text:nth-child(1){
+  font-weight:300;
+  color:rgba(0,0,0,1);
+}.Collection-container .Collection .information>text:nth-child(2){
+  font-weight:300;
+  color:rgba(136,136,136,1);
+}
+.Collection-container .Collection .information .evaluate-Location{
+  display: flex;
+  justify-content: space-between;
+}
+.Collection-container .Collection .information .evaluate-Location .evaluate{
+  display: flex;
+}
+.Collection-container .Collection .information .evaluate-Location .evaluate>.img{
+  height: 22rpx;
+  width: 22rpx;
+}
+.Collection-container .Collection .information .evaluate-Location .Location{
+  display: flex;
+  height: 26rpx;
+  align-items: center;
+}
+.Collection-container .Collection .information .evaluate-Location .Location .imgs{
+  width: 22rpx;
+  height: 26rpx;
+}
+.Collection-container .Collection .information .evaluate-Location .Location text{
+  margin: 0 27rpx 0 10rpx;
+  font-weight:300;
+  color:rgba(102,102,102,1);
+}
+.Collection-container .Collection>text{
+  display: flex;
+  height: 220rpx;
+  width: 150rpx;
+  background: #f00;
+  color: #fff;
+  font: 700rpx 35rpx"";
+  align-items: center;
+  justify-content: center;
+
+}

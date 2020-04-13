@@ -1,0 +1,230 @@
+<!--pages/details/details.wxml-->
+<view class='details-container'>
+  <view class='container-top'>
+    <image class='background' src='/resources/background.png'></image>
+    <view class='picture'>
+      <image class='chart' src='/resources/Goods.png'></image>
+      <view class='Name'>
+        <text>浩泽活水站</text>
+        <view class='score'>
+          <text>服务指数</text>
+          <image class='Stars' src='/resources/Stars(1).png'></image>
+          <image class='Stars' src='/resources/Stars(1).png'></image>
+          <image class='Stars' src='/resources/Stars(1).png'></image>
+          <image class='Stars' src='/resources/Stars(1).png'></image>
+          <image class='Stars' src='/resources/Stars(1).png'></image>
+        </view>
+        <view class='distance'>
+          <text>本周配送</text>
+          <text>192单</text>
+        </view>
+      </view>
+      <view class='share'>
+        <button open-type="share"><image class='share1' src='/resources/share.png'></image></button>
+        <image class='heart' src='{{heart.img}}' bindtap='heart'></image>
+      </view>
+    </view>
+    <view class='Delivery'>
+      <view class='Delivery-time'>
+       <text>配送时间:</text>
+       <text>9:00-21:00</text>
+      </view>
+      <button class='welfare' open-type="share">分享赢红包</button>
+    </view>
+  </view>
+  <view class='container-bottom'>
+    <view class='menu'>
+      <view class='me'>
+        <text class='{{commodity}}' bindtap='commodity'>商品</text>
+        <text class='{{evaluate}}' bindtap='evaluate'>评价</text>
+        <text class='{{introduce}}' bindtap='introduce'>介绍</text>
+      </view>
+    </view>
+    <!-- 商品 -->
+    <view class='product' wx:if='{{product}}'>
+      <view class='commodity'>
+        <image class='chart' src='/resources/commodity.png'></image>
+        <view class='information'>
+          <text>娃哈哈送水券 （十张）</text>
+          <text>可兑换10桶19L娃哈哈水</text>
+          <view class='Price'><text>￥{{Price}}</text><text>￥270</text></view>
+        </view>
+        <view class='Number'>
+          <view class='text' bindtap='reduce'>
+            <text class='{{prohibit}}'></text>
+          </view>
+          <text class='{{prohibit}}'>{{number}}</text>
+          <view class='text' bindtap='plus'>
+            <text></text>
+            <view></view>
+          </view>
+        </view>
+      </view>
+      <view class='commodity '>
+        <image class='chart' src='/resources/commodity.png'></image>
+        <view class='information'>
+          <text>娃哈哈送水券 （十张）</text>
+          <text>可兑换10桶19L娃哈哈水</text>
+          <view class='Price'><text>￥{{Price1}}</text><text>￥270</text></view>
+        </view>
+        <view class='Number'>
+          <view class='text' bindtap='reduce1'>
+            <text class='{{prohibit1}}'></text>
+          </view>
+          <text class='{{prohibit1}}'>{{number1}}</text>
+          <view class='text' bindtap='plus1'>
+            <text></text>
+            <view></view>
+          </view>
+        </view>
+      </view>
+      <view class='container'>
+        <view class='te'></view>
+        <view class='Settlement'>
+          <view class='money'>
+            <view class='shui'>
+              <image class='img' src='/resources/shui.png'/>
+            <text class='font-24' >{{Shu}}</text>
+            </view>
+            <text>合计</text>
+            <text>￥{{cash}}</text>
+          </view>
+          <text>去接算</text>
+        </view>
+      </view>
+    </view>
+    <!-- 评价 -->
+    <view class='Comment' wx:if='{{Comment}}'>
+      <view class='option'>
+        <text class='{{whole}}' bindtap='Comment' data-gid='1'>全部</text>
+        <text class='{{Newest}}' bindtap='Comment' data-gid='2'>最新</text>
+      </view>
+      <view class='Praise'>
+        <image class='HeadPortrait' src='/resources/HeadPortrait.png'></image>
+        <view class='describe'>
+          <view class='describe-Name'>
+            <view class='container'>
+              <text>青***7</text>
+              <view class='Grade'>
+              <image class='img' src='/resources/Grade.png'></image>
+              <image class='img' src='/resources/Grade.png'></image>
+              <image class='img' src='/resources/Grade.png'></image>
+              </view>
+            </view>
+            <image class='function' src='/resources/function.png'></image>
+          </view>
+          <view class='date'>
+            <text>2019-07-18</text>
+            <text>哇哈哈</text>
+          </view>
+          <view class='describe-content'>
+            <text>连续已经喝了很久了，因为小区的水是地下水，水碱太严重了，喝着恶心的感觉，所以一直定水喝。这个还不错，推荐购买。</text>
+          </view>
+          <view class='container'>
+            <view class='browse'>
+              <text>浏览</text>
+              <text>9</text>
+              <text>次</text>
+            </view>
+            <view class='evaluate'> 
+              <view class='Reply'>
+                <image class='img' src='/resources/Reply.png'></image>
+                <text>评论</text>
+              </view>
+              <view class='Fabulous'>
+                <image class='imgs' src='/resources/Fabulous.png'></image>
+                <text>点赞</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class='Praise'>
+        <image class='HeadPortrait' src='/resources/HeadPortrait.png'></image>
+        <view class='describe'>
+          <view class='describe-Name'>
+            <view class='container'>
+              <text>青***7</text>
+              <view class='Grade'>
+              <image class='img' src='/resources/Grade.png'></image>
+              <image class='img' src='/resources/Grade.png'></image>
+              <image class='img' src='/resources/Grade.png'></image>
+              </view>
+            </view>
+            <image class='function' src='/resources/function.png'></image>
+          </view>
+          <view class='date'>
+            <text>2019-07-18</text>
+            <text>哇哈哈</text>
+          </view>
+          <view class='describe-content'>
+            <text>连续已经喝了很久了，因为小区的水是地下水，水碱太严重了，喝着恶心的感觉，所以一直定水喝。这个还不错，推荐购买。</text>
+          </view>
+          <view class='container'>
+            <view class='browse'>
+              <text>浏览</text>
+              <text>9</text>
+              <text>次</text>
+            </view>
+            <view class='evaluate'> 
+              <view class='Reply'>
+                <image class='img' src='/resources/Reply.png'></image>
+                <text>评论</text>
+              </view>
+              <view class='Fabulous'>
+                <image class='imgs' src='/resources/Fabulous.png'></image>
+                <text>点赞</text>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <!-- 介绍 -->
+    <view class='details' wx:if='{{details}}'>
+      <view class='service'>
+        <view class='introduce'>
+          <text>服务介绍</text>
+        </view>
+        <view class='content'>
+          <text>随着房产市场竞争的日益激烈， 企业越早获得准确的房屋信息就能越早和业主建立直接的联系，实地调查以及本公司的人脉关系获得大量的房屋信息。</text>
+          <text>我们的房屋信息不但覆盖了所有房屋类型，而且每一条信息均经过仔细的筛选、查询、核实和审查等严格的质量控制流程后才刊登到我们的信息系统中。我们的信息系统开发基于目前最先进的系统信息架构，</text>
+        </view>
+      </view>
+      <view class='BusinessCard'>
+        <view class='information'>
+          <text>商家名片</text>
+        </view>
+        <view class='BusinessCard-information'></view>
+      </view>
+       <view class='range'>
+        <view class='range-service'>
+          <text>服务范围</text>
+        </view>
+        <view class='Map'>
+          <view class='periphery'>
+            <text>周边</text>
+            <text>5</text>
+            <text>公里各小区，办公室，学校等。</text>
+          </view>
+          <view class='periphery-Map'>
+          <map id="map" longitude="113.324520" latitude="23.099994" scale="14" controls="{{controls}}" bindcontroltap="controltap" markers="{{markers}}" bindmarkertap="markertap" polyline="{{polyline}}" bindregionchange="regionchange" show-location ></map>
+          </view>
+        </view>
+      </view>
+      <view class='company'>
+        <view class='EnvironmentalScience'>
+          <text>公司环境</text>
+        </view>
+        <view class='chart'></view>
+      </view>
+      <view class='certificate'>
+        <view class='Permit'>
+          <text>经营许可证</text>
+        </view>
+        <view class='register'></view>
+      </view>
+    </view>
+  </view>
+
+</view>

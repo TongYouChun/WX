@@ -1,0 +1,73 @@
+<!--pages/My/My.wxml-->
+<view class='My-container'>
+  <view class='My-HeadPortrait'>
+    <image class='img' src='/resources/My-background.png'></image>
+    <view class='Name'>
+      <image class='img' src='/resources/HeadPortrait1.png'></image>
+      <view class='user'>
+        <text class='font-34'>July</text>
+        <view class='ID font-24'>
+        <text>用户ID：</text>
+        <text>11142</text>
+        </view>
+      </view>
+    </view>
+    <button class='Welfare' open-type="share">
+      邀请得红包
+    </button>
+  </view>
+  <view class='Integral'>
+    <view class='integral' bindtap='integral'>
+      <text class='font-24' >我的积分</text>
+      <text>389</text>
+    </view>
+    <view class='welfare' bindtap='RedEnvelopes'>
+      <text class='font-24'>我的红包</text>
+      <text>10</text>
+    </view>
+  </view>
+  <view class='option'>
+    <view class='History li' bindtap='History'>
+      <view class='text'>
+        <image class='img' src='/resources/Icon1.png'></image>
+        <text>历史订单</text>
+      </view>
+      <image class='imgs' src='/resources/RightArrow.png'></image>
+    </view>
+    <view class='address li' bindtap='address'>
+       <view class='text'>
+        <image class='img' src='/resources/Icon2.png'></image>
+        <text>地址薄</text>
+      </view>
+      <image class='imgs' src='/resources/RightArrow.png'></image>
+    </view>
+    <view class='Collection li' bindtap='Collection'>
+       <view class='text'>
+        <image class='img' src='/resources/Icon3.png'></image>
+        <text> 我的收藏</text>
+      </view>
+      <image class='imgs' src='/resources/RightArrow.png'></image>
+    </view>
+    <view class='cooperation li'>
+       <view class='text'>
+        <image class='img' src='/resources/Icon4.png'></image>
+        <text>商务合作</text>
+      </view>
+      <image class='imgs' src='/resources/RightArrow.png'></image>
+    </view>
+    <view class='service li'>
+       <view class='text'>
+        <image class='img' src='/resources/Icon5.png'></image>
+        <text>服务中心</text>
+      </view>
+      <image class='imgs' src='/resources/RightArrow.png'></image>
+    </view>
+    <view class='feedback li'>
+       <view class='text'>
+        <image class='img' src='/resources/Icon6.png'></image>
+        <text>我要反馈</text>
+      </view>
+      <image class='imgs' src='/resources/RightArrow.png'></image>
+    </view>
+  </view>
+</view>

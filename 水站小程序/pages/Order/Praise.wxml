@@ -1,0 +1,61 @@
+<!--pages/Order/Praise.wxml-->
+<view class='Praise-container'>
+  <view class='describe'>
+    <image class='img' src='/resources/commodity.png'></image>
+    <text class='font-30'>描述相符</text>
+    <view class='Stars'>
+      <image class='img' src='{{Store1.img1}}' bindtap='store1' data-gid='1'></image>
+      <image class='img' src='{{Store1.img2}}' bindtap='store1' data-gid='2'></image>
+      <image class='img' src='{{Store1.img3}}' bindtap='store1' data-gid='3'></image>
+      <image class='img' src='{{Store1.img4}}' bindtap='store1' data-gid='4'></image>
+      <image class='img' src='{{Store1.img5}}' bindtap='store1' data-gid='5'></image>
+    </view>
+    <text class='font-30'>{{Store1.text}}</text>
+  </view>
+  <view class='describe'>
+    <image class='img' src='/resources/commodity.png'></image>
+    <text class='font-30'>描述相符</text>
+    <view class='Stars'>
+      <image class='img' src='{{Store2.img1}}' bindtap='store2' data-gid='1'></image>
+      <image class='img' src='{{Store2.img2}}' bindtap='store2' data-gid='2'></image>
+      <image class='img' src='{{Store2.img3}}' bindtap='store2' data-gid='3'></image>
+      <image class='img' src='{{Store2.img4}}' bindtap='store2' data-gid='4'></image>
+      <image class='img' src='{{Store2.img5}}' bindtap='store2' data-gid='5'></image>
+    </view>
+    <text class='font-30'>{{Store2.text}}</text>
+  </view>
+  <view class='evaluate'>
+    <view class="input">
+      <textarea class="textarea" placeholder="请输入你的看法" cursor-spacing="{{65}}" show-confirm-bar="{{false}}" adjust-position="{{true}}" auto-focus="{{true}}" />
+    </view>
+    <view class='container font-24'>
+      <view class='zhaoxiang li' bindtap='getLocalImage'>
+        <image class='img' src='/resources/zhaoxiang.png'></image>
+        <text>添加照片</text>
+      </view>
+      <view class='shipin li' bindtap='getLocalVideo'>
+        <image class='img' src='/resources/shipin.png'></image>
+        <text>添加视频</text>
+      </view>
+    </view>
+  </view>
+  <view class='DormantName'>
+    <view class='Name'>
+      <image class='img' src='{{Anonymous.img}}' bindtap='Anonymous'></image>
+      <text class='font-30'>匿名</text>
+    </view>
+    <text class='font-26'>你写的评价会以匿名的形式展现</text>
+  </view>
+  <view class='shop'>
+    <image class='imgs' src='/resources/store.png'></image>
+    <text class='font-28'>店铺评分</text>
+    <image class='img' src='{{Store3.img1}}' bindtap='store3' data-gid='1'></image>
+    <image class='img' src='{{Store3.img2}}' bindtap='store3' data-gid='2'></image>
+    <image class='img' src='{{Store3.img3}}' bindtap='store3' data-gid='3'></image>
+    <image class='img' src='{{Store3.img4}}' bindtap='store3' data-gid='4'></image>
+    <image class='img' src='{{Store3.img5}}' bindtap='store3' data-gid='5'></image>
+  </view>
+  <view class='Release'>
+    <text class='font-30'>发布评价</text>
+  </view>
+</view>

@@ -1,0 +1,137 @@
+/* pages/My/address.wxss */
+.address-container{
+  border-top: 2rpx solid #e1e5e7;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #f0f4f7;
+}
+.address-container .address{
+  height: 156rpx;
+  padding-left: 40rpx;
+  display: flex;
+  background: #fff;
+  align-items: center;
+  justify-content: space-between;
+}
+.address-container .address .User-information{
+  display: flex;
+  flex-direction: column;
+  width: 600rpx;
+}
+.address-container .address .User-information .User{
+  font-weight:800;
+  color: #333;
+}
+.address-container .address .User-information .User text:nth-child(2){
+  margin-left: 10rpx; 
+}
+.address-container .address .User-information>text{
+  margin-top: 4rpx;
+  line-height: 43rpx;
+  color: #6b6b6b;
+}
+.address-container .address>text{
+  flex: 1 ;
+  display: flex;
+  justify-content: center;
+  color: #d00;
+}
+.address-container .add{
+  position: fixed;
+  z-index: 0;
+  bottom: 0;
+  left: 0;
+  width: 750rpx;
+  height: 98rpx;
+  background: #fff;
+  display: flex;
+}
+.address-container .add .WeChat{
+  flex: 1;
+  display: flex;
+   height: 98rpx;
+  justify-content: center;
+  align-items: center;
+
+}
+.address-container .add .WeChat .img{
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 6rpx;
+}
+.address-container .add .WeChat text{
+  margin-left: 10rpx;
+  color: #333;
+}
+.address-container .add>text{
+  flex: 1;
+  display: flex;
+  height: 98rpx;
+  justify-content: center;
+  background: #d00;
+  align-items: center;
+  color: #fff;
+}
+/* 添加 */
+.Add-To-container{
+  border-top: 2rpx solid #e1e5e7;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #f0f4f7;
+  align-items: center;
+}
+.Add-To-container .Add-To{
+  display: flex;
+  width: 730rpx;
+  flex-direction: column;
+  background: #fff;
+  padding-left: 20rpx;
+}
+.Add-To-container .Add-To .li{
+  display: flex;
+  height: 77rpx;
+  border-bottom: 1rpx solid #e1e5e7;
+  align-items: center;
+}
+.Add-To-container .Add-To .li>text:nth-child(1){
+  width: 146rpx;
+}
+.Add-To-container .Add-To .li>text:nth-child(2){
+  color: #959595;
+}
+.Add-To-container .Add-To .li>.input{
+  width: 480rpx;
+}
+.Add-To-container .Add-To .li>image{
+  margin-left: 60rpx;
+  width: 20rpx;
+  height: 33rpx;
+}
+.Add-To-container>button{
+  margin-top: 20rpx;
+  width: 658rpx;
+  height: 88rpx;
+  border: 1rpx solid #900;
+  background: #d00;
+  border-radius: 10rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font: 36rpx "";
+  color: #fff;
+}
+.Add-To-container>.text{
+  border: 1rpx solid #e1e5e7;
+  background: #fff;
+  color: #333;
+}
+.submit-btn{
+  border: 0;
+  background-color: #ff7900;
+  color: white;
+}
+.submit-btn::after {
+  border: 0;
+}

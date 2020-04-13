@@ -1,0 +1,554 @@
+/* pages/details/details.wxss */
+.details-container{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.details-container .container-top{
+  position: relative;
+  height: 318rpx;
+  display: flex;
+  flex-direction: column;
+}
+.container-top .background{
+  position: absolute;
+  z-index: -1;
+  width: 750rpx;
+  height: 318rpx;
+}
+.container-top .picture{
+  height: 170rpx;
+  display: flex;
+}
+.container-top .picture .chart{
+  margin: 45rpx 0 0 30rpx;
+  width: 120rpx;
+  height: 120rpx;
+  border: 2rpx solid #BED8E6;
+  border-radius: 5rpx;
+}
+.container-top .picture .Name{
+  margin: 45rpx 0 0 22rpx;
+  display: flex;
+  flex-direction: column;
+}
+.Name>text:nth-child(1){
+  font-size:34rpx;
+  font-family:PingFang SC;
+  font-weight:bold;
+  color:rgba(255,255,255,1);
+}
+.Name .score{
+  display: flex;
+}
+.Name .score text{
+  margin-right: 36rpx;
+  font-size:24rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(255,255,255,1);
+  line-height:36rpx;
+}
+.Name .score .Stars{
+  width:27rpx;
+  height:26rpx;
+}
+.Name .distance{
+  display: flex;
+}
+.distance>text:nth-child(1){
+  font-size:24rpx;
+  margin-right: 24rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(255,255,255,1);
+  line-height:35rpx;
+}
+.distance>text:nth-child(2){
+  font-size:23rpx;
+  font-family:PingFang SC;
+  font-weight:800;
+  color:rgba(255,255,255,1);
+  line-height:35rpx;
+}
+.container-top  .picture .share{
+  display: flex;
+  margin-top: 20rpx;
+  margin-left: 176rpx;
+}
+.container-top  .picture .share>button{
+  margin-right: 28rpx;
+  display: flex;
+  padding: 0;
+  background: 0;
+  border-radius: 0;
+  width: 40rpx;
+  height: 38rpx;
+}
+.share .share1{
+  width: 40rpx;
+  height: 38rpx;
+}
+.share .heart{
+  width: 42rpx;
+  height: 40rpx;
+}
+.container-top  .Delivery{
+  display: flex;
+  flex-direction: column;
+  margin-left: 30rpx;
+}
+.Delivery-time{
+  margin-top: 28rpx;
+  display: flex;
+  font-size:24rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(252,253,255,1);
+}
+.Delivery-time>text:nth-child(1){
+  margin-right: 10rpx;
+}
+.Delivery .welfare{
+  margin: 0;
+  margin-top: 19rpx;
+  width: 147rpx;
+  height: 45rpx;
+  background:linear-gradient(0deg,rgba(229,180,0,1),rgba(255,221,1,1));
+  border-radius:23rpx;
+  font-size:20rpx;
+  font-family:PingFang SC;
+  font-weight:500;
+  color:rgba(102,70,0,1);
+  line-height:45rpx;
+  text-align: center;
+}
+.container-bottom{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.container-bottom .menu{
+  display: flex;
+  height: 84rpx;
+  background: #F0F3F7;
+  border-bottom: 2rpx solid #BAC2CD;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10rpx;
+}
+.container-bottom .menu .me{
+  display: flex;
+  width: 270rpx;
+  height: 62rpx;
+  align-items: center;
+  justify-content: space-between;
+}
+.container-bottom .menu text{
+  font-size:28rpx;
+  height: 45rpx;
+  font-family:Microsoft YaHei;
+  font-weight:400;
+  color: #000000;
+}
+.container-bottom .menu .commodity{
+  color: #1992FF;
+  border-bottom: 4rpx solid #1892FF;
+}
+.container-bottom .menu .evaluate{
+  color: #1992FF;
+  border-bottom: 4rpx solid #1892FF;
+}
+.container-bottom .menu .introduce{
+  color: #1992FF;
+  border-bottom: 4rpx solid #1892FF;
+}
+/* 商品 */
+.container-bottom .product{
+    position: relative;
+    z-index: 0;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.container-bottom .product .commodity{
+  margin: 25rpx 20rpx 25rpx 22rpx;
+  display: flex;
+  border-bottom: 1rpx dashed #BFBFBF;
+}
+.commodity .chart{
+  width: 170rpx;
+  height: 170rpx;
+}
+.commodity .information{
+  margin-left: 32rpx;
+  display: flex;
+  flex-direction: column;
+}
+.commodity .information>text:nth-child(1){
+  font-size:30rpx;
+  font-family:Microsoft YaHei;
+  font-weight:400;
+  color:rgba(0,0,0,1);
+}
+.commodity .information>text:nth-child(2){
+  font-size:24rpx;
+  font-family:Microsoft YaHei;
+  font-weight:300;
+  color:rgba(136,136,136,1);
+  line-height:60rpx;
+}
+.commodity .information .Price text:nth-child(1){
+  font-size:36rpx;
+  font-family:Microsoft YaHei;
+  font-weight:bold;
+  color:rgba(255,0,0,1);
+  line-height:100rpx;
+}
+.commodity .information .Price text:nth-child(2){
+  margin-left:25rpx; 
+  font-size:24rpx;
+  font-family:Microsoft YaHei;
+  font-weight:500;
+  text-decoration:line-through;
+}
+.commodity .Number{
+  margin-top: 60rpx;
+  margin-left: 60rpx;
+  display: flex;
+}
+.commodity .Number .text:nth-child(1),.commodity .Number .text:nth-child(3){
+  width: 40rpx;
+  height:40rpx;
+  position: relative;
+  display: flex;
+  border: 1px solid #999999;
+  border-radius: 50%;
+}
+.commodity .Number .text:nth-child(1) text,.commodity .Number .text:nth-child(3) text{
+  width: 20rpx;
+  height: 4rpx;
+  position: absolute;
+  left: 0;
+  top:0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  background: #000;
+}
+.commodity .Number .text:nth-child(1) .prohibit{
+ background: #ccc;
+}
+.commodity .Number .text:nth-child(3) view{
+  width: 4rpx;
+  height: 20rpx;
+  position: absolute;
+  left: 0;
+  top:0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  background: #000;
+}
+.commodity .Number>text {
+  padding: 0 22rpx;
+  font-size:32rpx;
+  font-family:Microsoft YaHei;
+  font-weight:bold;
+  color:rgba(0,0,0,1);
+}
+.commodity .Number .prohibit{
+  color: #ccc;
+}
+.container-bottom .product .container .te{
+  width: 750rpx;
+  height: 98rpx;
+
+}
+.container-bottom .product .container .Settlement{
+  position: absolute;
+  z-index: -1;
+  display: flex;
+  width: 750rpx;
+  height: 98rpx;
+  bottom: 0;
+  left: 0;
+}
+.container-bottom .product .container .Settlement .money{
+  flex: 1;
+  display: flex;
+  align-items: center;
+  background: #DDDFDF;
+}
+.container-bottom .product .container .Settlement>text{
+  height: 98rpx;
+  font: 700 30rpx/98rpx "";
+  width: 210rpx;
+  background: #ff0066;
+  color: #fff;
+  text-align: center;
+}
+.container-bottom .product .container .Settlement .money .shui{
+  position: absolute;
+  display: flex;
+  bottom: 16rpx;
+  left: 65rpx;
+  width: 82rpx;
+  height: 108rpx;
+}
+.container-bottom .product .container .Settlement .money .shui .img{
+  width: 82rpx;
+  height: 108rpx;
+}
+.container-bottom .product .container .Settlement .money .shui text{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top:30rpx;
+  right: -16rpx;
+  width: 37rpx;
+  height: 37rpx;
+  background: #ff0066;
+  border-radius: 50%;
+  color: #fff;
+}
+.container-bottom .product .container .Settlement .money>text:nth-child(2){
+  margin-left: 210rpx;
+  font: 700 28rpx"";
+  color: #333;
+
+}
+.container-bottom .product .container .Settlement .money>text:nth-child(3){
+  margin-left: 32rpx;
+  font: 700 32rpx"";
+  color: #f00;
+}
+.container-bottom .product .container
+
+/* 评价 */
+.Comment {
+  display: flex;
+  flex-direction: column;
+  margin: 12rpx 28rpx 0 20rpx;
+}
+.Comment .option{
+  display: flex;
+}
+.Comment .option text{
+  margin: 0 10rpx 0 5rpx;
+  width:110rpx;
+  height:55rpx;
+  border:2rpx solid rgba(204, 204, 204, 1);
+  border-radius:28rpx;
+  font-size:28rpx;
+  font-family:Microsoft YaHei;
+  font-weight:300;
+  color:rgba(136,136,136,1);
+  line-height:55rpx;
+  text-align: center;
+}
+.Comment .option .te{
+  color:#1892FF;
+  border:2rpx solid rgba(24, 146, 255, 1);
+}
+.Comment .Praise{
+  padding-top: 50rpx;
+  padding-bottom: 20rpx;
+  display: flex;
+}
+.Comment .Praise .HeadPortrait{
+  margin-right: 18rpx;
+  width: 58rpx;
+  height: 58rpx;
+}
+.Comment .Praise .describe{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+.describe .describe-Name{
+  display: flex;
+  height: 42rpx;
+  justify-content: space-between;
+}
+.describe .describe-Name .container{
+  display: flex;
+}
+.describe .describe-Name .container>text{
+  font: 32rpx/42rpx "";
+  color: #000;
+  margin-right: 12rpx
+}
+.describe .describe-Name .Grade{
+  display: flex;
+  height: 42rpx;
+  align-items: center;
+}
+.describe .describe-Name .Grade .img{
+  width: 30rpx;
+  height: 26rpx;
+}
+.describe .describe-Name .function{
+  margin-top: 10rpx;
+  width: 24rpx;
+  height: 8rpx;
+}
+.describe .date{
+  display: flex;
+}
+.describe .date text{
+  font-size:24rpx;
+  font-family:Microsoft YaHei;
+  color:rgba(136,136,136,1);
+  font-weight:300;
+  line-height:36rpx;
+}
+.describe .date text:nth-child(1){
+  margin-right: 30rpx;
+  font-weight:500;
+}
+.describe  .describe-content{
+  padding: 20rpx 0;
+}
+.describe  .describe-content text{
+  font-size: 30rpx;
+  color: #434343;
+}
+.describe .container{
+  display: flex;
+  height: 30rpx;
+  align-items: center;
+  justify-content: space-between;
+}
+.describe .container .browse{
+  font-size: 25rpx;
+  color:#9a9a9a;
+}
+.describe .container .browse text:nth-child(2){
+  margin: 0 8rpx;
+}
+.describe .container .evaluate{
+  display: flex;
+}
+.describe .container .evaluate .Reply{
+  display: flex;
+  margin-right: 56rpx;
+  height: 30rpx;
+  align-items: center;
+}
+.describe .container .evaluate .Reply .img{
+  width: 26rpx;
+  height: 26rpx;
+}
+.describe .container .evaluate .Reply text{
+  margin-left: 14rpx;
+  font-size: 25rpx;
+  color:#676769;
+}
+.describe .container .evaluate .Fabulous{
+  display: flex;
+  height: 30rpx;
+  align-items: center;
+}
+.describe .container .evaluate .Fabulous .imgs{
+  width: 30rpx;
+  height: 26rpx;
+}
+.describe .container .evaluate .Fabulous text{
+  margin-left: 14rpx;
+  font-size: 25rpx;
+  color:#676769;
+}
+
+/* 介绍 */
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.details .service ,.details .BusinessCard ,.details .range ,.details .company,.details .certificate{
+  display: flex;
+  flex-direction: column;
+}
+.details .service .introduce,.details .BusinessCard .information ,.details .range .range-service ,.details .company .EnvironmentalScience,.details .certificate .Permit{
+  display: flex;
+  align-items: center; 
+  margin: 0 20rpx 27rpx 20rpx;
+  height: 75rpx;
+  border-bottom: 1rpx solid #D5E0E8;
+}
+.details .service .introduce text ,.details .BusinessCard .information text,.details .range .range-service text,.details .company .EnvironmentalScience text,.details .certificate .Permit text{
+  height: 36rpx;
+  border-left: 7rpx solid #51B2F7;
+  margin-left: 14rpx;
+  padding-left: 20rpx;
+  font-size:28rpx;
+  font-family:Microsoft YaHei;
+  font-weight:400;
+  color:rgba(0,0,0,1);
+  line-height:36rpx;
+}
+.details .service .content{
+  margin: 8rpx 35rpx 0 41rpx;
+  display: flex;
+  flex-direction: column;
+  text-indent: 2em;
+}
+.details .service .content text{
+  font-size:28rpx;
+  font-family:Microsoft YaHei;
+  font-weight:300;
+  color:rgba(51,51,51,1);
+  line-height:48rpx;
+  margin-bottom: 56rpx;
+}
+
+.details .BusinessCard .BusinessCard-information{
+  width: 710rpx;
+  height: 420rpx;
+  border-radius: 30rpx;
+  background: #54ADFD;
+  margin-bottom: 73rpx;
+}
+.details .range .Map{
+  display: flex;
+  flex-direction: column;
+}
+.details .range .Map .periphery{
+  display: flex;
+  margin-left: 70rpx;
+  margin-bottom: 30rpx;
+}
+.details .range .Map .periphery>text{
+  font-size:28rpx;
+  font-family:Microsoft YaHei;
+  font-weight:300;
+  color:rgba(51,51,51,1);
+}
+.details .range .Map .periphery>text:nth-child(2){
+  font-weight:500;
+  color: #FF0000;
+}
+.details .range .Map .periphery-Map{
+  height: 456rpx;
+  width: 750rpx;
+  background: #78f;
+  margin-bottom:50rpx; 
+}
+.details .range .Map .periphery-Map #map{
+  height: 456rpx;
+  width: 750rpx;
+}
+.details .company .chart{
+  width: 710rpx;
+  height: 475rpx;
+  background: #f00;
+  margin-bottom:20rpx; 
+}
+.details .certificate .register{
+  width: 740rpx;
+  height: 527rpx;
+  background: #0ff;
+  margin: 18rpx 0 268rpx 0;
+}

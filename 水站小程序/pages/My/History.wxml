@@ -1,0 +1,59 @@
+<!--pages/My/History.wxml-->
+<view class='History'>
+  <view class='SignFor'>
+    <view class='head'>
+      <text class='font-30'>浩泽括水站</text>
+      <text class='font-30'>已签收</text>
+    </view>
+    <view class='chart'>
+      <view class='product'>
+        <image class='img' src='/resources/commodity.png'></image>
+        <text class='font-24'>x1</text>
+      </view>
+      <view class='information'>
+        <text class='font-30'>雀巢桶装水</text>
+        <text class='font-24'>19L 正品雀巢</text>
+      </view>
+    </view>
+    <view class='Price'>
+      <text class='font-24'>共2件商品</text>
+      <text class='font-24'>实付金额</text>
+      <text class='font-36'>¥221</text>
+    </view>
+    <view class='evaluate'>
+      <text class='font-24'>2019-07-18 17:31:44</text>
+      <view class='text font-28'>
+        <text class='{{Evaluate}}'>{{complete}}</text>
+        <text>再次购买</text>
+      </view>
+    </view>
+  </view>
+  <view class='SignFor'>
+    <view class='head'>
+      <text class='font-30'>浩泽括水站</text>
+      <text class='font-30'>已签收</text>
+    </view>
+    <view class='chart'>
+      <view class='product'>
+        <image class='img' src='/resources/commodity.png'></image>
+        <text class='font-24'>x1</text>
+      </view>
+      <view class='information'>
+        <text class='font-30'>雀巢桶装水</text>
+        <text class='font-24'>19L 正品雀巢</text>
+      </view>
+    </view>
+    <view class='Price'>
+      <text class='font-24'>共2件商品</text>
+      <text class='font-24'>实付金额</text>
+      <text class='font-36 font-700'>¥221</text>
+    </view>
+    <view class='evaluate'>
+      <text class='font-24'>2019-07-18 17:31:44</text>
+      <view class='text font-28'>
+        <text class='{{Evaluate1}}' bindtap='Evaluate'>{{complete1}}</text>
+        <text>再次购买</text>
+      </view>
+    </view>
+  </view>
+</view>

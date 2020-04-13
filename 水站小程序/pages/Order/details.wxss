@@ -1,0 +1,413 @@
+/* pages/Order/details.wxss */
+.Order-container{
+  position: relative;
+  z-index: 0;
+  flex: 1;
+  background: #F0F4F7;
+  display: flex;
+  flex-direction: column;
+}
+/* 等待 */
+.Order-container .waitFor{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.Order-container .waitFor .background{
+  position: absolute;
+  z-index: -1;
+  width: 710rpx;
+  height: 320rpx;
+  top: 20rpx;
+  left: 20rpx;
+}
+.Order-container .waitFor .Number{
+  display: flex;
+  margin: 20rpx 22rpx 0 20rpx;
+  padding: 0 33rpx 0 22rpx;
+  justify-content: space-between;
+  border-bottom: 2rpx solid #7f62dc;
+}
+.waitFor .Number .OrderNumber text ,.waitFor .Number .calendar text{
+  font-weight:300;
+  color:#fff;
+  line-height:59rpx;
+}
+.Order-container .waitFor .state{
+  margin: 0 22rpx 0 20rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.Order-container .waitFor .Receipt{
+  display: flex;
+  flex-direction: column;
+}
+.Order-container .waitFor .Receipt>text{
+  margin: 79rpx 0 0 91rpx;
+  font-size:30rpx;
+  font-family:Microsoft YaHei;
+  font-weight:bold;
+  color:rgba(255,255,255,1);
+}
+.Order-container .waitFor .Telephone{
+  width: 180rpx;
+  height: 50rpx;
+  border: 1rpx solid #fff;
+  border-radius: 10rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 59rpx 0 0 64rpx;
+}
+.Order-container .waitFor .Telephone .phone{
+  width: 28rpx;
+  height: 28rpx;
+  margin-right: 10rpx;
+}
+.Order-container .waitFor .Telephone>text{
+  font-weight:300;
+  color:rgba(255,255,255,1);
+}
+.Order-container .waitFor .WaterStation{
+  margin: 21rpx 27rpx 0 0;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+.Order-container .waitFor .WaterStation>text{
+  font-weight:bold;
+  color:rgba(255,255,255,1);
+}
+.Order-container .waitFor .WaterStation .number{
+  margin-top: 15rpx;
+  display: flex;
+}
+.Order-container .waitFor .WaterStation .number>text{
+  font-weight:300;
+  color:rgba(255,255,255,1);
+}
+.waitFor .WaterStation .number text:nth-child(2){
+  margin: 0 10rpx;
+}
+.waitFor .service{
+  margin-top: 10rpx;
+}
+.waitFor .service text{
+  margin-right: 10rpx;
+  font-weight:300;
+  color:rgba(255,255,255,1);
+}
+.waitFor .service .img{
+  width: 27rpx;
+  height: 26rpx;
+}
+/* 配送中 */
+.Order-container .Delivery1 .Number{
+ border-bottom: 2rpx solid #75abf4;
+}
+.Order-container .Delivery1 .Receipt .HeadPortrait{
+  margin: 16rpx 0 0 92rpx;
+  width: 110rpx;
+  height: 110rpx;
+  border-radius: 50%;
+}
+.Order-container .Delivery1 .Receipt>text{
+  margin: 5rpx 0 0 99rpx;
+}
+.Order-container .Delivery1 .Receipt .Telephone{
+  margin: 20rpx 0 0 65rpx;
+}
+.Order-container .Delivery1 .delivery{
+  height: 24rpx;
+  margin-top: 10rpx;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+}
+.Order-container .Delivery1 .delivery text{
+  font-weight:300;
+  color:rgba(0,255,252,1);
+}
+.Order-container .Delivery1 .delivery .img{
+  padding-left: 14rpx;
+  width: 40rpx;
+  height: 9rpx;
+}
+.Order-container .Delivery1 .complete{
+  margin-top: 10rpx;
+  display: flex;
+  flex-direction: row-reverse;
+}
+.Order-container .Delivery1 .complete>text{
+  width:180rpx;
+  height:60rpx;
+  background: #FFF600;
+  border-radius: 30rpx;
+  line-height:60rpx;
+  color: #0E0E0E;
+  text-align: center;
+}
+/*  */
+.Order-container>.product{
+  width: 712rpx;
+  margin-top:49rpx; 
+  margin-left: 20rpx;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.Order-container>.product>text{
+  margin: 0 20rpx 28rpx 22rpx;
+  height: 70rpx;
+  border-bottom: 1rpx solid #E6E6E6;
+  font-weight:bold;
+  color:rgba(0,0,0,1);
+  line-height:70rpx;
+}
+.Order-container>.product .product-1{
+  margin-bottom: 36rpx;
+  margin-left: 20rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.Order-container>.product .product-1 .information{
+  display: flex;
+}
+.product .product-1 .information .img{
+  width: 127rpx;
+  height: 126rpx;
+}
+.product .product-1 .information .Name{
+  margin-left: 22rpx;
+  width: 300rpx;
+  padding-right: 20rpx;
+  display: flex;
+  flex-direction: column;
+}
+.product .product-1 .information .Name text:nth-child(1){
+  font-weight:bold;
+  color:rgba(0,0,0,1);
+}
+.product .product-1 .information .Name text:nth-child(2){
+  margin-top: 16rpx;
+  font-weight:300;
+  color:rgba(136,136,136,1);
+}
+.Order-container>.product .product-1 .information .text{
+  display: flex;
+  margin-top: 28rpx;
+}
+.Order-container>.product .product-1 .information .text text{
+  font-weight:bold;
+  color:rgba(0,0,0,1);
+}
+.Order-container>.product .product-1 .information .text text:nth-child(2){
+  margin-left: 5rpx;
+ font-weight:bold;
+}
+.Order-container>.product .product-1 .Price{
+  margin-right: 47rpx; 
+  margin-top: 28rpx;
+}
+.Order-container>.product .product-1 .Price>text{
+  font-weight:bold;
+  color:rgba(0,0,0,1);
+}
+.Order-container>.product .welfare{
+  margin: 0 22rpx; 
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1rpx solid #E6E6E6;
+}
+.Order-container>.product .welfare .Discount ,.Order-container>.product .welfare .integral{
+  margin: 12rpx 25rpx 28rpx 0;
+  display: flex;
+  justify-content: space-between;
+}
+.Order-container>.product .welfare .Discount .favourable ,.Order-container>.product .welfare .integral .JiFen{
+  display: flex;
+}
+.Order-container>.product .welfare .Discount .favourable>text:nth-child(1) ,.Order-container>.product .welfare .integral .JiFen>text:nth-child(1){
+  width: 120rpx;
+  height: 40rpx;
+  font-size: 22rpx;
+  font-weight:300;
+  line-height:40rpx;
+  text-align: center;
+}
+.Order-container>.product .welfare .Discount .favourable>text:nth-child(1){
+  background:rgba(255,207,207,0.2);
+  border:1px solid rgba(255, 127, 127, 1);
+  color:rgba(255,0,0,1);
+}
+.Order-container>.product .welfare .integral .JiFen>text:nth-child(1){
+  background:rgba(181,235,255,0.2);
+  border:1px solid rgba(33, 177, 203, 1);
+  color:rgba(33,177,203,1);
+}
+.Order-container>.product .welfare .Discount .favourable>text:nth-child(2) ,.Order-container>.product .welfare .integral .JiFen>text:nth-child(2){
+  margin-left: 24rpx;
+  font-weight:300;
+  color:rgba(153,153,153,1);
+}
+.Order-container>.product .welfare .Discount>text,.Order-container>.product .welfare .integral>text{
+  font-size:30rpx;
+  font-weight:bold;
+  color:rgba(255,0,0,1);
+}
+.product .cash{
+  display: flex;
+  justify-content: space-between;
+  margin:0 22rpx;
+  padding: 28rpx 0 36rpx 0;
+  border-bottom: 1px solid #E6E6E6;
+}
+.cash>text:nth-child(1){
+  width: 400rpx;
+  font-size:22rpx;
+  font-weight:300;
+  color:rgba(136,136,136,1);
+}
+.cash>text:nth-child(2){
+  font-size:22rpx;
+  font-weight:300;
+  color:rgba(153,153,153,1);
+}
+.cash .XianJin{
+  margin-right: 25rpx;
+}
+.cash .XianJin text{
+  font-weight:bold;
+  color:rgba(0,0,0,1);
+}
+.product .ReceivingGoods{
+  display: flex;
+  margin: 0 22rpx;
+  padding: 20rpx 0 24rpx 45rpx;
+  justify-content: space-between;
+}
+.product .ReceivingGoods text{
+  width: 200rpx;
+  height: 68rpx;
+  border: 1rpx solid #B6B6B6;
+  background: #F2F2F2;
+  border-radius: 34rpx;
+  font-weight:300;
+  color:rgba(170,170,170,1);
+  line-height:68rpx;
+  text-align: center;
+}
+.product .ReceivingGoods .te{
+  border: 1rpx solid #0C75D5;
+  background: #fff;
+  color: #1184F2;
+}
+.product .ReceivingGoods .Determine{
+  border: 1rpx solid #FF0066;
+  background: #FF0066;
+  color: #fff;
+}
+.product>.Tips{
+  margin: 0 35rpx 37rpx 45rpx;
+}
+.product>.Tips text:nth-child(1){
+  color: #FF0066;
+  font-weight:500;
+}
+.product>.Tips text:nth-child(2){
+  color: #FF0066;
+  font-weight:300;
+}
+
+.Order-container .Delivery{
+  margin: 24rpx 20rpx 149rpx 20rpx;
+  padding: 0 22px 35rpx 22rpx;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.Order-container .Delivery>text{
+  font-weight:bold;
+  color:rgba(0,0,0,1);
+  border-bottom: 1rpx solid #E6E6E6;
+  line-height:70rpx;
+}
+.Order-container .Delivery .ReceivingGoods ,.Order-container .Delivery .address ,.Order-container .Delivery .time{
+  margin-top: 35rpx;
+  display: flex;
+}
+.Order-container .Delivery .ReceivingGoods .img{
+  width: 35rpx;
+  height: 37rpx;
+}
+.Order-container .Delivery .address .img{
+  width: 32rpx;
+  height: 42rpx;
+}
+.Order-container .Delivery .time .img{
+  width: 38rpx;
+  height: 38rpx;
+}
+.Order-container .Delivery .ReceivingGoods>text:nth-child(2),.Order-container .Delivery .address>text:nth-child(2) ,.Order-container .Delivery .time>text:nth-child(2){
+  margin-left:25rpx; 
+  width: 88rpx;
+  font-weight:300;
+  color:rgba(0,0,0,1);
+}
+.Order-container .Delivery .address>text:nth-child(3) {
+  width: 410rpx;
+  font-weight:300;
+color:rgba(0,0,0,1);
+}
+.Order-container .Delivery .ReceivingGoods .contact,.Order-container .Delivery .address>text:nth-child(3) ,.Order-container .Delivery .time>text:nth-child(3){
+  margin-left: 54rpx;
+}
+.Order-container .Delivery .ReceivingGoods .contact>text{
+  font-weight:300;
+  color:rgba(0,0,0,1);
+}
+.Order-container .Delivery .ReceivingGoods .contact>text:nth-child(2){
+  margin-left: 40rpx;
+}
+.Order-container .Delivery .time>text:nth-child(3){
+  font-weight:300;
+  color:rgba(153,153,153,1);
+}
+.payment{
+  position: absolute;
+  top: 0;
+  bottom: 0rpx;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, .6)
+}
+.payment .Password{
+  position: fixed;
+  top: 778rpx;
+  left: 0;
+  background: #fff;
+  height: 462rpx;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.payment .Password .Password-1{
+  display: flex;
+  height: 98rpx;
+  border-bottom: 2rpx solid #ececec;
+  align-items: center;
+  justify-content: space-between;
+}
+.payment .Password .Password-1 .img{
+  margin-left: 34rpx;
+  width: 32rpx;
+  height: 32rpx;
+}
+.payment .Password .Password-1>text{
+  margin-right: 26rpx;
+  color: #2579b0;
+}
+.payment .Password>text{
+  margin-top: 66rpx;
+  text-align: center;
+}
